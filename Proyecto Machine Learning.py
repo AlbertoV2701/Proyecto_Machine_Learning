@@ -1,5 +1,11 @@
 # Proyecto Modelo Regresión en Python
 
+# Librerías necesarias:
+# pandas
+# numpy
+# scikit-learn
+# openpyxl
+
 # Cargamos las librerías
 import pandas as pd
 from sklearn.model_selection import train_test_split

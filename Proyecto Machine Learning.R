@@ -1,8 +1,3 @@
-
-
-# Revisaremos lo que hicimos en Excel y añadiremos muchísimas cosas más de machine learing.
-
-
 # Proyecto Modelo Regresión
 
 # Cargamos los datos
@@ -73,4 +68,5 @@ for (nombre in names(modelos)) {
 
 # Mostramos los resultados
 print(resultados)
+
 

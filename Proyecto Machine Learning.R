@@ -1,10 +1,5 @@
 # Proyecto Modelo Regresión
 
-# Cargamos los datos
-library(readxl)
-Datos_Modelo <- read_excel("Tu RUTA DE LA CARPETA CON EL EXCEL", 
-                           sheet = "Datos")
-
 # Modelo real de machine learning
 
 # Necesitamos:
@@ -21,7 +16,11 @@ install.packages("readxl")
 # Cargamos las librerías
 library(tidyverse)
 library(caret)
+library(readxl)
 
+# Cargamos los datos
+Datos_Modelo <- read_excel("Tu RUTA DE LA CARPETA CON EL EXCEL", 
+                           sheet = "Datos")
 
 datos <- Datos_Modelo
 
@@ -69,6 +68,7 @@ for (nombre in names(modelos)) {
 
 # Mostramos los resultados
 print(resultados)
+
 
 
 

@@ -16,6 +16,7 @@ Datos_Modelo <- read_excel("Tu RUTA DE LA CARPETA CON EL EXCEL",
 # Instalamos los paquetes (si no están instalados)
 install.packages("tidyverse")
 install.packages("caret")
+install.packages("readxl")
 
 # Cargamos las librerías
 library(tidyverse)
@@ -68,5 +69,6 @@ for (nombre in names(modelos)) {
 
 # Mostramos los resultados
 print(resultados)
+
 
 

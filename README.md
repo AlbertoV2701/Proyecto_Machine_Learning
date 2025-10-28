@@ -1,5 +1,5 @@
 # Proyecto_Machine_Learning
-Proyecto realizado en curso de IPS Datax sobre Machine Learning en Python y R.
+Proyecto realizado en curso de IPS Datax sobre Ciencia de Datos con Python y R.
 
 🧠 Descripción General del Proyecto
 

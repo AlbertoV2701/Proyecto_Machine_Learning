@@ -19,7 +19,7 @@ library(caret)
 library(readxl)
 
 # Cargamos los datos
-Datos_Modelo <- read_excel("Tu RUTA DE LA CARPETA CON EL EXCEL", 
+Datos_Modelo <- read_excel("TU RUTA DE LA CARPETA CON EL EXCEL, EJ: C:/Users/Sasu2/Music/Prueba R/Datos_Modelo.xlsx ", 
                            sheet = "Datos")
 
 datos <- Datos_Modelo
@@ -71,4 +71,17 @@ print(resultados)
 
 
 
+# Elegir el modelo a usar (puede ser "Regresión Lineal", "Árbol de Decisión", etc.)
+modelo_elegido <- modelos[["Regresión Lineal"]]
 
+# Predecir sobre los datos de test
+predicciones <- predict(modelo_elegido, newdata = testData)
+
+# Crear un data.frame con los valores reales y predichos
+df_pred <- data.frame(
+  Salario_Real = testData$Salario,
+  Salario_Predicho = predicciones
+)
+
+# Mostrar las primeras 10 filas
+head(df_pred, 10)

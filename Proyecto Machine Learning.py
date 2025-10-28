@@ -17,7 +17,7 @@ from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 import numpy as np
 
 # Leemos el archivo Excel
-archivo = "TU RUTA CON LA CARPETA Y EL ARCHIVO EXCEL"
+archivo = "TU RUTA CON LA CARPETA Y EL ARCHIVO EXCEL, EJ: C:\Users\Sasu2\Music\Prueba R\Datos_Modelo.xlsx"
 datos = pd.read_excel(archivo, sheet_name="Datos")
 
 # Convertimos variable categórica a tipo categoría
